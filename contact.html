@@ -33,25 +33,6 @@
 <body>
 	<div id="fh5co-wrapper">
 		<div id="fh5co-page">
-			<!-- <div class="fh5co-hero" data-section="home">
-				<div class="fh5co-overlay"></div>
-				<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5"
-					style="background-image: url(images/cover_bg_1.jpg);">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="container">
-								<div class="col-md-10 col-md-offset-1">
-									<div class="animate-box">
-										<h1>Welcome</h1>
-										<h2>St. Xavier&apos;s College</h2>
-										<p><span>Oct 06<sup>th</sup>&minus;07<sup>th</sup>&cedil; 2023</span></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
 
 			<header id="fh5co-header-section" class="sticky-banner">
 				<div class="container">
@@ -84,12 +65,9 @@
 						<div class="row row-bottom-padded-md">
 							<div class="col-lg-4 col-md-4 col-sm-6">
 								<div class="fh5co-contact animate-box">
-									<img class="img-responsive" src="images/cover_bg_1.jpg" alt="">
 									<div class="cont-text">
 										<div class="prod-title">
 											<h3><b>Achyuta Kumar</b></h3>
-											<span class="by">by Admin</span>
-											<span class="posted_date">Apr. 15th</span>
 											<p>Phone No: 7797328788<br>Email Id: achyutakr1711@gmail.com</p>
 										</div>
 									</div>
@@ -97,12 +75,9 @@
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-6">
 								<div class="fh5co-contact animate-box">
-									<img class="img-responsive" src="images/cover_bg_2.jpg" alt="">
 									<div class="cont-text">
 										<div class="prod-title">
 											<h3><b>Debopriyo Chakraborty</b></h3>
-											<span class="by">by Admin</span>
-											<span class="posted_date">Apr. 15th</span>
 											<p>Phone No: 7739194880<br>Email Id: test@gmail.com</p>
 										</div>
 									</div>
@@ -111,12 +86,9 @@
 							<div class="clearfix visible-sm-block"></div>
 							<div class="col-lg-4 col-md-4 col-sm-6">
 								<div class="fh5co-contact animate-box">
-									<img class="img-responsive" src="images/cover_bg_3.jpg" alt="">
 									<div class="cont-text">
 										<div class="prod-title">
 											<h3><b>Tanisha podder</b></h3>
-											<span class="by">by Admin</span>
-											<span class="posted_date">Apr. 15th</span>
 											<p>Phone No: 8910657576<br>Email Id: test@gmail.com</p>
 										</div>
 									</div>
@@ -125,12 +97,9 @@
 							<div class="clearfix visible-lg-block visible-md-block"></div>
 							<div class="col-lg-4 col-md-4 col-sm-6">
 								<div class="fh5co-contact animate-box">
-									<img class="img-responsive" src="images/cover_bg_1.jpg" alt="">
 									<div class="cont-text">
 										<div class="prod-title">
 											<h3><b>Spandan Mazumder</b></h3>
-											<span class="by">by Admin</span>
-											<span class="posted_date">Apr. 15th</span>
 											<p>Phone No: 9903123557<br>Email Id: test@gmail.com</p>
 										</div>
 									</div>
@@ -139,12 +108,9 @@
 							<div class="clearfix visible-sm-block"></div>
 							<div class="col-lg-4 col-md-4 col-sm-6">
 								<div class="fh5co-contact animate-box">
-									<img class="img-responsive" src="images/cover_bg_2.jpg" alt="">
 									<div class="cont-text">
 										<div class="prod-title">
 											<h3><b>Dhriti Roy Chowdhury</b></h3>
-											<span class="by">by Admin</span>
-											<span class="posted_date">Apr. 15th</span>
 											<p>Phone No: 9330313163<br>Email Id: test@gmail.com</p>
 										</div>
 									</div>
@@ -152,12 +118,9 @@
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-6">
 								<div class="fh5co-contact animate-box">
-									<img class="img-responsive" src="images/cover_bg_3.jpg" alt="">
 									<div class="cont-text">
 										<div class="prod-title">
 											<h3><b>Soham Ganguli</b></h3>
-											<span class="by">by Admin</span>
-											<span class="posted_date">Apr. 15th</span>
 											<p>Phone No: 7679814275<br>Email Id: test@gmail.com</p>
 										</div>
 									</div>
@@ -230,9 +193,24 @@
 
 		</div>
 		<!-- END fh5co-wrapper -->
-
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<!-- jQuery -->
-		<script src="dist/scripts.min.js"></script>
+		<script src="dist/scripts.min.js">
+			$(document).ready(function () {
+				// Add smooth scrolling to all links
+				$("#fh5co-menu-wrap ul.sf-menu li a").on('click', function (event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 800, function () {
+							window.location.hash = hash;
+						});
+					}
+				});
+			});
+		</script>
 </body>
 
 </html>

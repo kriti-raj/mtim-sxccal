@@ -33,25 +33,6 @@
 <body>
 	<div id="fh5co-wrapper">
 		<div id="fh5co-page">
-			<!-- <div class="fh5co-hero" data-section="home">
-				<div class="fh5co-overlay"></div>
-				<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5"
-					style="background-image: url(images/cover_bg_1.jpg);">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="container">
-								<div class="col-md-10 col-md-offset-1">
-									<div class="animate-box">
-										<h1>Welcome</h1>
-										<h2>St. Xavier&apos;s College</h2>
-										<p><span>Oct 06<sup>th</sup>&minus;07<sup>th</sup>&cedil; 2023</span></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
 
 			<header id="fh5co-header-section" class="sticky-banner">
 				<div class="container">
@@ -83,27 +64,27 @@
 					</div>
 					<div class="row row-cols-1 row-cols-md-3 text-center registration">
 						<div class="col-lg-3 text-center animate-box">
-							<div class="regn zoom-effect"><a href="#">
-									<img src="images/poster.jpg" class="img-responsive"
-										alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+							<div class="regn zoom-effect"><a
+									href="https://docs.google.com/forms/d/e/1FAIpQLScUjcgypeijjkA6-Dog1YHBUc39OBe0HECuABj_QNte8InwVQ/viewform">
+									<img src="images/poster.jpg" class="img-responsive" alt="Poster Presentation">
 									<h3>Poster Presentation</h3>
 								</a>
 							</div>
 						</div>
 						<div class="col-lg-3 text-center animate-box">
 							<div class="regn zoom-effect">
-								<a href="#">
-									<img src="images/photograph.jpg" class="img-responsive"
-										alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+								<a
+									href="https://docs.google.com/forms/d/e/1FAIpQLSeG0pS8H6qC3qV34gxWq5VgqvL_h8JhEEDhgojuKKs7Lk6LSg/viewform">
+									<img src="images/photograph.jpg" class="img-responsive" alt="Photography">
 									<h3>Photography</h3>
 								</a>
 							</div>
 						</div>
 						<div class="col-lg-3 text-center animate-box">
 							<div class="regn zoom-effect">
-								<a href="#">
-									<img src="images/quiz.jpg" class="img-responsive"
-										alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+								<a
+									href="https://docs.google.com/forms/d/e/1FAIpQLScK-HhxLV9KQVYVucl1mHYUVyovFLlsAnYqOo6Dp99oaZ0Ezg/viewform">
+									<img src="images/quiz.jpg" class="img-responsive" alt="Quiz">
 									<h3>Quiz</h3>
 								</a>
 							</div>
@@ -116,17 +97,19 @@
 					</div>
 					<div class="row text-center registration">
 						<div class="col-lg-3 text-center animate-box">
-							<div class="regn zoom-effect"><a href="#">
+							<div class="regn zoom-effect"><a
+									href="https://docs.google.com/forms/d/e/1FAIpQLSePrzjaRQlfNCH-mkK3IFw2GhJQ8P787F8s-slEGNrAtwv55w/viewform">
 									<img src="images/poster2.jpg" class="img-responsive"
-										alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+										alt="Poster Presentation (Students)">
 									<h3>Poster Presentation (Students)</h3>
 								</a>
 							</div>
 						</div>
 						<div class="col-lg-3 text-center animate-box">
-							<div class="regn zoom-effect"><a href="#">
+							<div class="regn zoom-effect"><a
+									href="https://docs.google.com/forms/d/e/1FAIpQLSfYCE75I0G9WuA7SEmrFFkfS0duxV8APCP9J-6dXjy2EX_xTA/viewform">
 									<img src="images/poster3.jpg" class="img-responsive"
-										alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+										alt="Poster Presentation (Teachers and Scholars)">
 									<h3>Poster Presentation (Teachers and Scholars)</h3>
 								</a>
 							</div>
@@ -197,9 +180,24 @@
 
 	</div>
 	<!-- END fh5co-wrapper -->
-
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- jQuery -->
-	<script src="dist/scripts.min.js"></script>
+	<script src="dist/scripts.min.js">
+		$(document).ready(function () {
+			// Add smooth scrolling to all links
+			$("#fh5co-menu-wrap ul.sf-menu li a").on('click', function (event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function () {
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

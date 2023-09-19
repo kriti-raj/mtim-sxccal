@@ -6,8 +6,10 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Kanit", Arial, sans-serif;
   line-height: 1.6;
   font-size: 16px;
   background: #fff;
@@ -25,6 +27,10 @@ a {
   -webkit-transition: 0.5s, ease;
   -o-transition: 0.5s, ease;
   transition: 0.5s, ease;
+}
+
+regn a:active {
+  text-decoration: none;
 }
 
 a:hover {
@@ -761,7 +767,7 @@ figure {
 
 #footer {
   background: #F69D9D;
-  padding: 60px 0 40px;
+  padding: 40px 0 0px;
 }
 
 #footer p {
@@ -781,7 +787,7 @@ figure {
 
 #footer h2 {
   color: #fff;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .btn {
@@ -1157,6 +1163,81 @@ figure {
   transform: scale(1.2);
 }
 
+#mtim-logo {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
 
+.founder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
+.founder img {
+  height: 190px;
+  width: 190px;
+}
 
+.founder h1{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.message p {
+  font-family: "Kanit", Arial, sans-serif;
+}
+
+.prod-title {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.prod-title:hover {
+  color: #FF5733;
+  transform: scale(1.1);
+}
+
+.cont-text {
+  background-color: #d6eba7;
+  padding: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cont-text:hover {
+  background-color: #fef1ee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#fh5co-menu-wrap ul.sf-menu li:hover>a {
+  color: #ff9900;
+}
+
+#fh5co-menu-wrap ul.sf-menu li a:hover {
+  color: #ff0000;
+}
+
+.fh5co-cover {
+  background-image: url(../images/cover_bg_1.jpg);
+}
+
+/* Make it responsive */
+@media (max-width: 767px) {
+  .fh5co-cover {
+    background-image: url(../images/cover_bg_1_potrait.jpeg);
+
+  }
+  .fh5co-cover .display-t{
+    height: 50px;
+  }
+  .fh5co-cover .display-tc h2{
+    padding-bottom: 200px;
+    font-size: 45px;
+  }
+  .fh5co-cover .display-tc h1{
+    font-size: 30px;
+  }
+}

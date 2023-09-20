@@ -7,6 +7,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
   font-family: "Kanit", Arial, sans-serif;
@@ -674,7 +675,7 @@ figure {
 
 .regn h3 {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .fh5co-contact {
@@ -1180,7 +1181,7 @@ figure {
   width: 190px;
 }
 
-.founder h1{
+.founder h1 {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -1189,7 +1190,8 @@ figure {
 }
 
 .message p {
-  font-family: "Kanit", Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  color: #3a3939;
 }
 
 .prod-title {
@@ -1224,20 +1226,56 @@ figure {
   background-image: url(../images/cover_bg_1.jpg);
 }
 
-/* Make it responsive */
 @media (max-width: 767px) {
   .fh5co-cover {
     background-image: url(../images/cover_bg_1_potrait.jpeg);
 
   }
-  .fh5co-cover .display-t{
+
+  .fh5co-cover .display-t {
     height: 50px;
   }
-  .fh5co-cover .display-tc h2{
+
+  .fh5co-cover .display-tc h2 {
     padding-bottom: 200px;
     font-size: 45px;
   }
-  .fh5co-cover .display-tc h1{
+
+  .fh5co-cover .display-tc h1 {
     font-size: 30px;
   }
 }
+
+#about p {
+  font-family: "Kanit", Arial, sans-serif;
+}
+
+@media (min-width:768px) and (max-width: 1100px) {
+  .fh5co-cover {
+    background-image: url(../images/cover_bg_1_med.jpg);
+
+  }
+
+  .fh5co-cover .display-t {
+    height: 50px;
+    padding-top: 20px;
+  }
+
+  .fh5co-cover .display-tc h2 {
+    padding-bottom: 300px;
+    font-size: 45px;
+  }
+
+  .fh5co-cover .display-tc h1 {
+    font-size: 30px;
+  }
+}
+
+#about p {
+  font-family: "Kanit", Arial, sans-serif;
+  color: #514646;
+}
+
+/* .founder h1 {
+  font-family: "Kanit", Arial, sans-serif;
+} */

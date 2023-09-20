@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
 body {
   font-family: "Kanit", Arial, sans-serif;
@@ -1276,6 +1277,29 @@ figure {
   color: #514646;
 }
 
-/* .founder h1 {
-  font-family: "Kanit", Arial, sans-serif;
-} */
+.events-head {
+  font-family: 'Playfair Display', serif;
+}
+
+.c2 {
+  padding-left: 40%;
+}
+
+.c1 {
+  padding-top: 20px;
+  padding-left: 30%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.images h3 {
+  padding-top: 2%;
+  padding-left: 45%;
+  padding-bottom: 4%;
+}
